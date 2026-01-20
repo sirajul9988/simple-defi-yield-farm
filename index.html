@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DeFi Farm</title>
+    <style>
+        body { font-family: monospace; background: #1a1a1a; color: #00ff9d; padding: 2rem; }
+        .container { max-width: 600px; margin: 0 auto; border: 1px solid #333; padding: 20px; }
+        button { background: #00ff9d; color: #000; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; margin-top: 10px;}
+        input { width: 100%; padding: 10px; background: #333; border: 1px solid #555; color: white; margin-bottom: 10px; box-sizing: border-box;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌾 Simple Yield Farm</h1>
+        <button id="connectBtn">Connect Wallet</button>
+        <p>Address: <span id="walletAddress">Not connected</span></p>
+        <hr>
+        <h3>Stake Tokens</h3>
+        <input type="number" id="stakeAmount" placeholder="Amount to stake">
+        <button id="stakeBtn">Stake</button>
+        <button id="withdrawBtn">Withdraw All</button>
+        <button id="claimBtn">Claim Rewards</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
